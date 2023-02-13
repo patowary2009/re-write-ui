@@ -1,0 +1,10 @@
+@use '@cdx/theme-angular-material' as cdx;
+@use '@cdx/ngx-branding/header/theme' as header;
+@use '@cdx/ngx-branding/footer/theme' as footer;
+
+@include cdx.default;
+html,
+body {
+  margin: 0;
+  padding: 0;
+}

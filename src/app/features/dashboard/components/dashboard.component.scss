@@ -1,0 +1,22 @@
+.dashboard-component {
+  margin-top: 70px;
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-wrap: nowrap;
+
+  .filter-component-wrapper {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 5px;
+    flex: 0 250px;
+    flex-grow: 0;
+	  flex-shrink: 0;
+  }
+  .report-container {
+    margin-left: 15px;
+    flex: 1;
+    overflow: auto;
+    .report-container-inner {
+      min-width: 500px;
+    }
+  }
+}

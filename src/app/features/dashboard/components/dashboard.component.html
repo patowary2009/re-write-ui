@@ -1,0 +1,16 @@
+<div class="dashboard-component">
+  <div class="filter-component-wrapper">
+    Filter Component
+  </div>
+  <div class="report-container">
+    <div class="report-container-inner">
+      <mat-tab-group [selectedIndex]="selectedTabIndex">
+        <mat-tab *ngFor="let tab of tabs; let index = index"
+          [label]="tab">
+          <span *ngIf="tab!='Market'">Component for {{tab}} tab</span>
+          <app-market *ngIf="tab=='Market'"></app-market>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</div>
